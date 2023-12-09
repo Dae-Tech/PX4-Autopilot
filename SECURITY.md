@@ -23,3 +23,6 @@ to verify on the description box. We recommend you add as much data as possible.
 screenshots, photos, and videos, anything that can help us verify and identify the issues being reported.
 
 At the bottom of the form, click Submit report. The maintainer team will be notified and will get back to you ASAP.
+
+
+# Adding a custom line (test)
