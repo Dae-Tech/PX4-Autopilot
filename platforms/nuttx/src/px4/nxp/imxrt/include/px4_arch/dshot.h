@@ -1,6 +1,7 @@
 /****************************************************************************
  *
- *   Copyright (c) 2017 PX4 Development Team. All rights reserved.
+ * Copyright (C) 2023 PX4 Development Team. All rights reserved.
+ * Author: Peter van der Perk <peter.vanderperk@nxp.com>
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -31,32 +32,14 @@
  *
  ****************************************************************************/
 
-/**
- * Lightware SF1xx/SF20/LW20 laser rangefinder (i2c)
- *
- * @reboot_required true
- * @min 0
- * @max 6
- * @group Sensors
- * @value 0 Disabled
- * @value 1 SF10/a
- * @value 2 SF10/b
- * @value 3 SF10/c
- * @value 4 SF11/c
- * @value 5 SF/LW20/b
- * @value 6 SF/LW20/c
- * @value 7 SF/LW30/d
- */
-PARAM_DEFINE_INT32(SENS_EN_SF1XX, 0);
+#pragma once
 
-/**
- * Lightware SF1xx/SF20/LW20 Operation Mode
- *
- * @value 0 Disabled
- * @value 1 Enabled
- * @value 2 Disabled during VTOL fast forward flight
- *
- * @min 0
- * @max 2
+#include <drivers/drv_pwm_output.h>
+
+
+/* The structure which contains configuration for DShot
  */
-PARAM_DEFINE_INT32(SF1XX_MODE, 1);
+typedef struct dshot_conf_t {
+	uint32_t			pinmux;
+	uint32_t			flexio_pin;
+} dshot_conf_t;
