@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# @name Matrice 600
+# @type Hexarotor x
+#
+
+. ${R}etc/init.d/rc.mc_defaults
+
+
+param set-default CA_AIRFRAME 0
