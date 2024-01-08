@@ -88,6 +88,7 @@ if(gazebo_FOUND)
 		iris_rplidar
 		iris_vision
 		matrice_600
+		matrice_600_nolanding
 		omnicopter
 		plane
 		plane_cam

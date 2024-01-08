@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/windrobo/px4_ros_com_ros2/install/px4_ros_com/include/**",
+        "/home/windrobo/px4_ros_com_ros2/install/px4_msgs/include/**",
+        "/home/windrobo/dai_ws/install/depthai_bridge/include/**",
+        "/home/windrobo/dai_ws/install/depthai_ros_msgs/include/**",
+        "/opt/ros/foxy/include/**",
+        "/home/windrobo/daetech/PX4-Autopilot/build/px4_sitl_default/src/modules/uxrce_dds_client/src/libmicroxrceddsclient_project-build/microcdr/src/microcdr/include/**",
+        "/home/windrobo/daetech/PX4-Autopilot/src/modules/uxrce_dds_client/Micro-XRCE-DDS-Client/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
