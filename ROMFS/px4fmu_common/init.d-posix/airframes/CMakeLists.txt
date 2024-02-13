@@ -45,6 +45,7 @@ px4_add_romfs_files(
 	1016_gazebo-classic_iris_downward_depth_camera
 	1017_gazebo-classic_iris_opt_flow_mockup
 	1019_gazebo-classic_iris_dual_gps
+	1020_gazebo-classic_if750a
 	1021_gazebo-classic_uuv_hippocampus
 	1022_gazebo-classic_uuv_bluerov2_heavy
 	1030_gazebo-classic_plane
@@ -69,6 +70,7 @@ px4_add_romfs_files(
 	1070_gazebo-classic_boat
 	1071_gazebo-classic_matrice_600
 	1072_gazebo-classic_matrice_600_nolanding
+
 
 	2507_gazebo-classic_cloudship
 
