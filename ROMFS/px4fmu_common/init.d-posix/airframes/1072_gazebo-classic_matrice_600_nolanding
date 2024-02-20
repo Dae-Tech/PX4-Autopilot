@@ -55,5 +55,14 @@ param set-default PWM_MAIN_FUNC4 104
 param set-default PWM_MAIN_FUNC5 105
 param set-default PWM_MAIN_FUNC6 106
 
+#PWM fail for motors
+param set-default PWM_MAIN_FAIL1 900
+param set-default PWM_MAIN_FAIL2 900
+param set-default PWM_MAIN_FAIL3 900
+param set-default PWM_MAIN_FAIL4 900
+param set-default PWM_MAIN_FAIL5 900
+param set-default PWM_MAIN_FAIL6 900
+
 # Parachute
-param set-default PWM_MAIN_FUNC7 401
+param set-default PWM_AUX_DIS1 900
+param set-default PWM_AUX_FAIL1 200
