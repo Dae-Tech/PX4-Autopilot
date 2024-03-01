@@ -121,6 +121,7 @@ if(gazebo_FOUND)
 		windy
 		yosemite
 		upb12
+		upb
 	)
 
 	# find corresponding airframes
