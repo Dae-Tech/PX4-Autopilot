@@ -15,6 +15,7 @@ services:
     build: 
       context: .
       dockerfile: joystick.Dockerfile
+    tty: true
     ports:
       - "5353:5353"
     networks: 
