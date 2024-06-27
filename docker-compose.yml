@@ -1,8 +1,25 @@
+# SUGGESTED FOLDER SETUP
+# /PX4-Autopilot
+#    - xrce.Dockerfile
+#    - qgc.Dockerfile
+#    - docker-compose.yaml
+#    - joystick.Dockerfile
+
 
 networks:
   emp-network:
 
 services:
+  joystick: 
+    container_name: joystick
+    build: 
+      context: .
+      dockerfile: joystick.Dockerfile
+    ports:
+      - "5353:5353"
+    networks: 
+      - emp-network
+    
   simulation:
     image: px4io/px4-dev-ros2-foxy:latest
     container_name: px4
@@ -22,6 +39,7 @@ services:
     image: ubuntu-xrcedds-suite
     container_name: uxrcedds
     tty: true
+
     networks:
       - emp-network
   qgc:
@@ -33,12 +51,7 @@ services:
       - DISPLAY=:0
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:ro
-      - /dev:/dev
     privileged: true
     tty: true
     networks:
       - emp-network
-
-
-
-
