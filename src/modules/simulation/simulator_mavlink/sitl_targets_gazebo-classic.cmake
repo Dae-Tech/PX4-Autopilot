@@ -87,6 +87,7 @@ if(gazebo_FOUND)
 		iris_opt_flow_mockup
 		iris_rplidar
 		iris_vision
+		if750a
 		matrice_600
 		matrice_600_nolanding
 		omnicopter
