@@ -41,8 +41,7 @@ services:
 #    container_name: uxrcedds
 #    tty: true
 
-    networks:
-      - emp-network
+
   qgc:
     build:
       context: .
