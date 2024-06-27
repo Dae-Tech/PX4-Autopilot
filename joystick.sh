@@ -1,34 +1,35 @@
 #!/bin/bash
 
-# Actualizar la lista de paquetes
+# Update package list
 sudo apt-get update
 
-# Instalar Python, pip y virtualenv
+# Install Python, pip, and virtualenv
 sudo apt-get install -y python3 python3-pip python3-venv
 
-# Crear un entorno virtual
+# Create a virtual environment
 sudo python3 -m venv myenv
 
-# Cambiar los permisos del entorno virtual para el usuario actual
+# Change the permissions of the virtual environment for the current user
 sudo chown -R $USER:$USER myenv
 
-# Activar el entorno virtual
+# Activate the virtual environment
 source myenv/bin/activate
 
-# Instalar paquetes de Python en el entorno virtual
+# Install Python packages in the virtual environment
 pip install Flask flask_socketio flask_cors python-uinput mavsdk
 
-# Instalar git
+# Install git
 sudo apt-get install -y git
 
-# Clonar el repositorio
+# Clone the repository
 git clone https://github.com/jangel017/RemoteJoystick.git
 
-# Cambiar al directorio del repositorio clonado
+# Change to the cloned repository directory
 cd RemoteJoystick
 
-# Instalar sudo (por si no está instalado)
+# Install sudo (in case it is not installed)
 sudo apt-get install -y sudo
 
-echo "Setup completo."
+echo "Setup complete."
+
 
