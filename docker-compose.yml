@@ -33,13 +33,13 @@ services:
       - emp-network
     environment:
       - DISPLAY=:0
-  uxrce:
-    build:
-      context: .
-      dockerfile: xrce.Dockerfile
-    image: ubuntu-xrcedds-suite
-    container_name: uxrcedds
-    tty: true
+#  uxrce:
+#    build:
+#      context: .
+#      dockerfile: xrce.Dockerfile
+#    image: ubuntu-xrcedds-suite
+#    container_name: uxrcedds
+#    tty: true
 
     networks:
       - emp-network
