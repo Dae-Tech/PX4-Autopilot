@@ -9,18 +9,7 @@
 networks:
   emp-network:
 
-services:
-  joystick: 
-    container_name: joystick
-    build: 
-      context: .
-      dockerfile: joystick.Dockerfile
-    tty: true
-    ports:
-      - "5353:5353"
-    networks: 
-      - emp-network
-    
+services:    
   simulation:
     image: px4io/px4-dev-ros2-foxy:latest
     container_name: px4
@@ -33,6 +22,9 @@ services:
       - emp-network
     environment:
       - DISPLAY=:0
+    ports: 
+      - "5353:5353"
+      - "11345:11345"
 #  uxrce:
 #    build:
 #      context: .
