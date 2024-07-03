@@ -108,6 +108,7 @@ if(gazebo_FOUND)
 		uuv_bluerov2_heavy
 		uuv_hippocampus
 		upb12
+  		corn
 	)
 
 	set(worlds
@@ -123,6 +124,7 @@ if(gazebo_FOUND)
 		yosemite
 		upb12
 		upb
+  		cornfield
 	)
 
 	# find corresponding airframes
