@@ -18,7 +18,6 @@ RUN . "$NVM_DIR/nvm.sh" && nvm install 11
 RUN git clone https://github.com/JeanPaulSB/gzweb
 RUN apt install -y libjansson-dev libboost-dev imagemagick libtinyxml-dev mercurial cmake build-essential
 RUN cd /gzweb
-#RUN git checkout gzweb_1.4.1
-#RUN source /usr/share/gazebo/setup.sh
-#RUN npm run deploy --- -m local
-#RUN npm start
+RUN source /usr/share/gazebo/setup.sh
+npm run deploy --- -m
+RUN npm start
