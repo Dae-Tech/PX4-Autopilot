@@ -32,6 +32,7 @@ services:
     volumes:
       - ../gzweb:/src/gzweb
       - /etc/letsencrypt/:/etc/letsencrypt/
+      - ./Tools/simulation/gazebo-classic/sitl_gazebo-classic/models:/gzweb/http/client/assets/
     ports:
       - "8080:8080"
   redis:
