@@ -31,7 +31,7 @@ services:
       - "GAZEBO_MASTER_URI=http://simulation:11345"
     volumes:
       - ../gzweb:/src/gzweb
-      - /etc/letsencrypt/live/simulation.dae.com.co:/etc/letsencrypt/live/simulation.dae.com.co
+      - /etc/letsencrypt/:/etc/letsencrypt/
     ports:
       - "8080:8080"
   redis:
