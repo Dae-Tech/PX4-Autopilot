@@ -19,5 +19,5 @@ RUN git clone https://github.com/JeanPaulSB/gzweb
 RUN apt install -y libjansson-dev libboost-dev imagemagick libtinyxml-dev mercurial cmake build-essential
 RUN cd /gzweb
 RUN . /usr/share/gazebo/setup.sh
-RUN npm run deploy --- -m
-RUN npm start
+#RUN npm run deploy --- -m
+#RUN npm start
