@@ -20,7 +20,7 @@ services:
       - DISPLAY=:0
     ports:
       - "5353:5353"
-    command: ["/bin/bash", "-c", "/src/PX4-Autopilot/px4.sh"]
+    #command: ["/bin/bash", "-c", "/src/PX4-Autopilot/px4.sh"]
   gzweb:
     build:
       context: .
